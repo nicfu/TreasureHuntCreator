@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treasure Hunt Creator</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Treasure Hunt Creator</h1>
+        <p>Make a treasure hunt with ease!</p>
+    </header>
+    <main>
+        <section id="features">
+            <h2>Features</h2>
+            <ul>
+                <li>Create custom treasure hunts</li>
+                <li>Share with friends</li>
+                <li>Track progress</li>
+                <li>Fun for all ages</li>
+            </ul>
+        </section>
+        <section id="signup">
+            <h2>Get Started</h2>
+            <p>Sign up now to start creating your own treasure hunts!</p>
+            <form action="/signup" method="post">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Treasure Hunt Creator. All rights reserved.</p>
+    </footer>
+</body>
+</html>
