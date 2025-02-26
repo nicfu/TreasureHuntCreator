@@ -113,20 +113,20 @@ AI Components
 3. System Architecture
 
 flowchart LR
-    A[Web Frontend<br>(React/Vue/etc.)] -- HTTPS --> B[Backend Server/REST API]
+    A[Web Frontend<br>(React/Vue)] -- HTTPS --> B[Backend Server/REST API<br>(Python Flask)]
     B -- API calls --> C[OpenAI Vision Model]
     B -- API calls --> D[OpenAI Text Model]
     B -- Database Calls --> E[Database<br>(SQL/NoSQL)]
 
     Frontend:
-        Mobile-responsive web app (React, Vue, etc.).
+        Mobile-responsive web app (React, Vue).
 
     Backend:
-        Node.js, Python (Flask/Django/FastAPI), or similar.
+        Python (Flask)
         Manages user accounts, hunts, photo uploads, clue generation, game state, and scoring.
 
     Database:
-        Relational (PostgreSQL) or NoSQL (MongoDB).
+        Relational (PostgreSQL).
         Stores user data, hunts, clues, photos, leaderboards, etc.
 
 4. Data Handling
@@ -139,7 +139,7 @@ flowchart LR
     Clue Descriptions:
         Vision LLM → raw text.
         Text LLM → final clue text.
-        Stored in the DB with references to the hunts/clues.
+        Store the description of the image and the clue text in the DB with references to the hunts/clues/photo.
 
     User Data:
         Basic profile info (email, hashed password or OAuth tokens).

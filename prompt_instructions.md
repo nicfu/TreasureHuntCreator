@@ -16,10 +16,7 @@ I talk to many dev friends about this, and we all have a similar approach with v
 
 Here is my workflow. It is built upon my own work, conversations with friends (thx Nikete, Kanno, Obra, Kris, and Erik), and following many best practices shared on the various terrible internet bad places.
 
-This is working well NOW, it will probably not work in 2 weeks, or it will work twice as well. ¯\_(ツ)_/¯
-Let’s go
-Juggalo Robot
-I always find these AI-generated images to be suspect. Say hi to my juggalo coding robot angel!
+
 
 There are many paths for doing dev, but my case is typically one of two:
 
@@ -27,10 +24,13 @@ There are many paths for doing dev, but my case is typically one of two:
     Legacy modern code
 
 I will show you my process for both paths
+
 Greenfield
 
 I find the following process works well for greenfield development. It provides a robust planning and documentation approach, and allows you to execute easily in small steps.
+
 Green field
+
 Technically, there is a green field on the right. Leica Q, 5/14/2016
 Step 1: Idea honing
 
