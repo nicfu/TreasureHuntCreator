@@ -1,5 +1,6 @@
 from flask import Flask, render_template, session
 from auth import auth_bp
+from auth import auth_bp
 from flask_sqlalchemy import SQLAlchemy
 from models import db
 
