@@ -1,14 +1,11 @@
-from flask import Flask, render_template, session
-from auth import auth_bp
-from auth import auth_bp
+from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
-from models import db
+from app.models import db
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///treasure.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db.init_app(app)
-app.register_blueprint(auth_bp)
 
 @app.route("/")
 def home():
